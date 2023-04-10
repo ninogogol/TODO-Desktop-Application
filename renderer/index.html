@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Electron TODO</title>
+  </head>
+  <body>
+    <h1>TODO</h1>
+    <input id="todoInput" type="text" placeholder="Create a new todo…" />
+    <button id="addButton">Add todo</button>
+    <span class="note">* You can check the checkbox once you've completed your todo.</span>
+    <ul id="todoList"></ul>
+    <script src="./js/renderer.js"></script>
+  </body>
+</html>

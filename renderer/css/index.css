@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Josefin Sans', sans-serif;
+  src: url('../fonts/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Josefin Sans', sans-serif;
+  src: url('../fonts/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #d1b5d9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+  color: #240335;
+  margin: 40px 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 15px;
+}
+
+#todoInput {
+  width: 480px;
+  height: 48px;
+  padding-left: 20px;
+  background-color: #ffffff99;
+  color: #393A4B;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  box-shadow: 0px 35px 50px -15px rgba(30, 12, 43, 0.881);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+input::placeholder {
+  color: #9495A5;
+}
+
+#addButton {
+  margin-block: 20px 40px;
+  width: 160px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #911f91d4;
+  color: white;
+}
+
+#addButton:hover, li button:hover {
+  cursor: pointer;
+  background-color: #521a52;
+}
+
+span.note {
+  color: #521a52;
+  margin-bottom: 20px;
+}
+
+#todoList {
+  position: relative;
+  width: 480px;
+  background-color: #ffffff99;
+  color: #393A4B;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  box-shadow: 0px 35px 50px -15px rgba(30, 12, 43, 0.881);
+  border-radius: 5px;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+li {
+  padding: 20px 100px 10px 10px;
+}
+
+#todoList li:last-child {
+  padding-bottom: 30px;
+}
+
+li span {
+  margin-left: 10px;
+  border-bottom: 1px solid #393A4B;
+}
+
+li span.checked {
+  text-decoration: line-through;
+  color: #521a52;
+}
+
+li button {
+  position: absolute;
+  right: 10px;
+  width: 80px;
+  height: 26px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #911f91d4;
+  color: white;
+}

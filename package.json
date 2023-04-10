@@ -1,0 +1,36 @@
+{
+  "name": "todo-desktop-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron main",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Nino Gogoladze",
+  "license": "ISC",
+  "build": {
+    "appId": "com.example.electron-todo",
+    "icon": "renderer/icon/favicon",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "renderer/icon/favicon.ico",
+      "uninstallerIcon": "renderer/icon/favicon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^24.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
+  }
+}
